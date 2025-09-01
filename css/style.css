@@ -3,6 +3,10 @@
 @import "footer.css";
 @import "main.css";
 
+:root {
+  --button-primary: orangered;
+  --button-hover: darksalmon;
+}
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
     "Pretendard Variable", Pretendard, Roboto, "Noto Sans KR", "Segoe UI",
@@ -13,14 +17,14 @@ body {
 .media-info-msg {
   position: fixed;
   inset: 0;
-  display: none; /* ← 처음엔 무조건 안 보이도록 */
+  display: none;
   justify-content: center;
   align-items: center;
   background: darksalmon;
   z-index: 3000;
 }
 
-@media (min-width: 481px) {
+@media (min-width: 600px) {
   .media-info-msg {
     display: flex;
   }
