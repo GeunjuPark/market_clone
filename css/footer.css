@@ -23,6 +23,23 @@ footer {
   margin: 0 10px 0 10px;
   cursor: pointer;
 }
+
+@keyframes icon-motion {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .footer-icons_img {
   width: 30px;
+}
+
+.footer-icons:hover .footer-icons_img {
+  animation: 1.5s icon-motion;
 }
