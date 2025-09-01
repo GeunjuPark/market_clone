@@ -40,13 +40,20 @@ main {
 }
 
 .write-btn {
-  background-color: orangered;
-  color: white;
-  padding: 10px 15px 10px 15px;
+  position: fixed;
+  right: 16px;
+  bottom: 80px;
+  z-index: 3500;
+  background-color: var(--button-primary);
+  color: #fff;
+  padding: 10px 15px;
   font-size: 15px;
   border-radius: 20px;
-  position: fixed;
-  bottom: 100px;
-  right: 50px;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.write-btn:hover {
+  background-color: var(--button-hover);
 }
